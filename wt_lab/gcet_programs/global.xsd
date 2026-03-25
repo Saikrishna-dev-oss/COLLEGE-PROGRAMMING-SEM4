@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Global Complex Type Definition -->
+    <xs:complexType name="AddressType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="company" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Address1 Element -->
+    <xs:element name="Address1">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="address" type="AddressType"/>
+                <xs:element name="phone1" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Address2 Element -->
+    <xs:element name="Address2">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="address" type="AddressType"/>
+                <xs:element name="phone2" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<attendance_system>
+    <student id="2026-01">
+        <name>Mangali Sai Krishna</name>
+        <branch>AIML</branch>
+        <history>
+            <entry date="2026-03-01">Present</entry>
+            <entry date="2026-03-02">Present</entry>
+        </history>
+    </student>
+    <student id="2026-02">
+        <name>Anjali Rao</name>
+        <branch>CSE</branch>
+        <history>
+            <entry date="2026-03-01">Absent</entry>
+        </history>
+    </student>
+    <student id="2026-03">
+        <name>Arjun V</name>
+        <branch>Blockchain Hub</branch>
+        <history>
+            </history>
+    </student>
+</attendance_system>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="student.xsd">
+
+    <rollno>101</rollno>
+    <name>Satish</name>
+    <branch>CSE</branch>
+    <marks>85</marks>
+
+</student>

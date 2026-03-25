@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookstore SYSTEM "Sample.dtd">
+
+<bookstore>
+    <book>
+        <title>Web Programming</title>
+        <author>Chris Bates</author>
+        <ISBN>123-456-789</ISBN>
+        <publisher>Wiley</publisher>
+        
+        <edition>3</edition>
+        <price>350</price>
+        
+    </book>
+    </bookstore>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Select a Fruit</h2>
+
+<select id="myList" onchange="showSelected()">
+  <option value="">-- Choose --</option>
+  <option value="Apple">Apple</option>
+  <option value="Banana">Banana</option>
+  <option value="Mango">Mango</option>
+</select>
+
+<p id="result"></p>
+
+<script>
+function showSelected() {
+  var selected = document.getElementById("myList").value;
+  document.getElementById("result").innerHTML = "You selected: " + selected;
+}
+</script>
+</body>
+</html>

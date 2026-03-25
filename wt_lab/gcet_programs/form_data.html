@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form Demonstration</title>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form action="tables.html" method="get" target="_self">
+
+<fieldset>
+<legend>Personal Information</legend>
+
+<label for="fname">First Name:</label><br>
+<input type="text" id="fname" name="fname" placeholder="Enter first name" required><br><br>
+
+<label for="lname">Last Name:</label><br>
+<input type="text" id="lname" name="lname" placeholder="Enter last name" required><br><br>
+
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+<label for="dob">Date of Birth:</label><br>
+<input type="date" id="dob" name="dob"><br><br>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Academic Details</legend>
+
+<label>Gender:</label><br>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br><br>
+
+<label>Courses Interested:</label><br>
+<input type="checkbox" name="course" value="AI"> AI<br>
+<input type="checkbox" name="course" value="ML"> ML<br>
+<input type="checkbox" name="course" value="DL"> DL<br><br>
+
+<label for="dept">Department:</label><br>
+<select id="dept" name="dept">
+    <option value="cse">CSE</option>
+    <option value="ece">ECE</option>
+    <option value="eee">EEE</option>
+</select><br><br>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Additional Information</legend>
+
+<label for="address">Address:</label><br>
+<textarea id="address" name="address" rows="4" cols="40"
+placeholder="Enter your address here"></textarea><br><br>
+
+<input type="text" value="India" readonly><br><br>
+
+</fieldset>
+
+<br>
+<!--<input type="submit" value="submit">Submit</input>-->
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>

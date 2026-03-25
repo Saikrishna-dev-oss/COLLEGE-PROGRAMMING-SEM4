@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student>
+    <rollno>101</rollno>
+    <name>Ravi</name>
+    <branch>CSE</branch>
+    <marks>85</marks>
+</student>

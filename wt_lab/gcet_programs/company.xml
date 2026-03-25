@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Company companyId="C101"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="Att_company.xsd">
+
+    <Employee empId="E001">
+        <FirstName>Tanmay</FirstName>
+        <LastName>Patil</LastName>
+        <ContactNo>1234567890</ContactNo>
+        <Email>tanmaypatil@xyz.com</Email>
+        <Address>
+            <City>Bangalore</City>
+            <State>Karnataka</State>
+            <Zip>560212</Zip>
+        </Address>
+    </Employee>
+
+</Company>

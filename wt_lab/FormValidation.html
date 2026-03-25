@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head><title>Form Validation</title></head>
+<body>
+<h2>Registration Form</h2>
+
+<form onsubmit="return validateForm()">
+  Name: <input type="text" id="name"><br><br>
+  Password (min 6): <input type="password" id="pass"><br><br>
+  Confirm Password: <input type="password" id="cpass"><br><br>
+  Mobile: <input type="text" id="mob"><br><br>
+  Email: <input type="text" id="email"><br><br>
+  <input type="submit" value="Register">
+</form>
+
+<script>
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var pass = document.getElementById("pass").value;
+  var cpass = document.getElementById("cpass").value;
+  var mob = document.getElementById("mob").value;
+  var email = document.getElementById("email").value;
+
+  if (name == "") {
+    alert("Name cannot be empty");
+    return false;
+  }
+  if (pass.length < 6) {
+    alert("Password must be at least 6 characters");
+    return false;
+  }
+  if (pass != cpass) {
+    alert("Passwords do not match");
+    return false;
+  }
+  if (mob.length != 10) {
+    alert("Mobile number must be 10 digits");
+    return false;
+  }
+  if (email.indexOf("@") == -1) {
+    alert("Enter a valid email");
+    return false;
+  }
+  alert("Form submitted successfully!");
+  return true;
+}
+</script>
+</body>
+</html>

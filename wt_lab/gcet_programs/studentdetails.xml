@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE student SYSTEM "student.dtd">
+<student>
+    <rollno>101</rollno>
+    <name>Anil</name>
+    <branch>CSE</branch>
+    <marks>90</marks>
+</student>

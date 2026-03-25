@@ -1,0 +1,40 @@
+<html>
+
+	<head>
+	
+	<title> Count lines, words and Characters </title>
+	
+	<script type="text/JavaScript">
+		function count() 
+		{ 
+		var str=document.f1.ta.value; 
+		var result=''; 
+		
+		result+='The number of characters are '+str.length+'\n'; 
+		
+		var words=str.split(' '); 
+		result+='The number of words are '+words.length+'\n'; 
+		
+		var lines=str.split('\n'); 
+		result+='The number of lines are '+lines.length; 
+		
+		alert(result); 
+		} 
+	</script>
+	</head>
+	
+	<body>
+		<center><h3> Count the no.of Lines, words and Characters </h3>
+		<form name='f1'>
+		<label> Enter your Text Here : </label><br>
+		<textarea rows='7' cols='70' name='ta'>
+		</textarea> <br/>
+		<input type="submit" value="submit" onclick="count()">
+		</form>
+		</center>
+	</body>
+	</html>
+
+
+
+

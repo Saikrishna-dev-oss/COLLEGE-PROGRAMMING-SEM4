@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>TutorialsPoint DOM example</h1>
+
+<div>
+<b>Name:</b> <span id="name"></span><br>
+<b>Company:</b> <span id="company"></span><br>
+<b>Phone:</b> <span id="phone"></span>
+</div>
+
+<script>
+var xmlhttp;
+
+if (window.XMLHttpRequest) {
+    xmlhttp = new XMLHttpRequest();
+} else {
+    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+
+xmlhttp.open("GET", "address.xml", false);
+xmlhttp.send();
+
+var xmlDoc = xmlhttp.responseXML;
+
+document.getElementById("name").innerHTML =
+xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+
+document.getElementById("company").innerHTML =
+xmlDoc.getElementsByTagName("company")[0].childNodes[0].nodeValue;
+
+document.getElementById("phone").innerHTML =
+xmlDoc.getElementsByTagName("phone")[0].childNodes[0].nodeValue;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Tables Demonstration</title>
+</head>
+<body>
+
+    <h1 align="center">HTML Tables Example</h1>
+
+    <!-- Basic Table with Caption -->
+    <table border="2" cellpadding="10" cellspacing="5" 
+           width="70%" align="center" bgcolor="#E8F6F3">
+
+        <caption><b>Student Information Table</b></caption>
+
+        <!-- Table Header Row -->
+        <tr bgcolor="#AED6F1">
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Marks</th>
+        </tr>
+
+        <!-- Table Data Rows -->
+        <tr align="center">
+            <td>101</td>
+            <td>Ravi</td>
+            <td>CSE</td>
+            <td>85</td>
+        </tr>
+
+        <tr align="center">
+            <td>102</td>
+            <td>Anita</td>
+            <td>ECE</td>
+            <td>90</td>
+        </tr>
+
+        <tr align="center">
+            <td>103</td>
+            <td>Rahul</td>
+            <td>ME</td>
+            <td>78</td>
+        </tr>
+
+    </table>
+
+    <br><br>
+
+    <!-- Table demonstrating Colspan and Rowspan -->
+    <table border="2" cellpadding="10" cellspacing="5" 
+           width="60%" align="center">
+
+        <caption><b>Employee Work Schedule</b></caption>
+
+        <tr bgcolor="#F9E79F">
+            <th rowspan="2">Employee ID</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Working Hours</th>
+        </tr>
+
+        <tr bgcolor="#F9E79F">
+            <th>Morning</th>
+            <th>Evening</th>
+        </tr>
+
+        <tr align="center">
+            <td>201</td>
+            <td>Suresh</td>
+            <td>9 AM - 1 PM</td>
+            <td>2 PM - 6 PM</td>
+        </tr>
+
+        <tr align="center">
+            <td>202</td>
+            <td>Priya</td>
+            <td colspan="2">Full Day</td>
+        </tr>
+
+    </table>
+
+    <br><br>
+
+    <!-- Table demonstrating height, width, valign -->
+    <table border="1" cellpadding="10" cellspacing="0" 
+           width="50%" height="150" align="center" bgcolor="#FDEDEC">
+
+        <caption><b>Vertical Alignment Example</b></caption>
+
+        <tr>
+            <th height="50">Subject</th>
+            <th>Marks</th>
+        </tr>
+
+        <tr>
+            <td valign="middle">Mathematics</td>
+            <td valign="middle" align="center">88</td>
+        </tr>
+
+        <tr>
+            <td valign="middle">Physics</td>
+            <td valign="middle" align="center">92</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

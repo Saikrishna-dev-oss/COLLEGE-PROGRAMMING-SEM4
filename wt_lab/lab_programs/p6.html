@@ -1,0 +1,74 @@
+<!-- program 6: Write a HTML program to develop a Registration Form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1 align="center">Student Registration Form</h1>
+    <hr />
+
+    <form action="" method="get">
+        <p>
+            <strong>Full Name:</strong>
+            <input type="text" name="fullname" placeholder="Enter your name" required>
+        </p>
+
+        <p>
+            <strong>Email Address:</strong>
+            <input type="email" name="email" placeholder="Enter your email" required>
+        </p>
+
+        <p>
+            <strong>Password:</strong>
+            <input type="password" name="password" required>
+        </p>
+
+        <p>
+            <strong>Gender:</strong>
+            <input type="radio" name="gender" > Male
+            <input type="radio" name="gender" > Female
+            <input type="radio" name="gender" > Other
+        </p>
+
+        <p>
+            <strong>Date of Birth:</strong><br />
+            <input type="date" name="dob">
+        </p>
+
+        <p>
+            <strong>Course:</strong><br />
+            <select name="course">
+                <option value="">--Select Course--</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="MECH">MECH</option>
+            </select>
+        </p>
+
+        <p>
+            <strong>Hobbies:</strong><br />
+            <input type="checkbox" name="hobby" value="Reading"> Reading
+            <input type="checkbox" name="hobby" value="Sports"> Sports
+            <input type="checkbox" name="hobby" value="Music"> Music
+        </p>
+
+        <p>
+            <strong>Address:</strong><br />
+            <textarea name="address" rows="4" cols="30" placeholder="Enter your address"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+
+    <hr />
+    <p>
+        <em>This registration form is developed using basic HTML form elements.</em>
+    </p>
+</body>
+</html>

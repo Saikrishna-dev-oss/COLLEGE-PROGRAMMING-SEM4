@@ -1,0 +1,21 @@
+# Java compiled output
+*.class
+bin/
+
+# C compiled binaries (no extension executables)
+DAA/src/**/MergeSort
+DAA/src/**/DFS
+os_lab/**/FCFS
+os_lab/**/SJF
+os_lab/**/priority
+os_lab/**/roundRobin
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Misc
+*.o
+*.out

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Attendance Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-card">
+        <header>
+            <h1>Attendance Terminal</h1>
+            <p>Enter name to mark presence for <strong><span id="current-date"></span></strong></p>
+        </header>
+
+        <div class="input-zone">
+            <input type="text" id="studentSearch" placeholder="Enter Student Name..." list="student-suggestions">
+            <datalist id="student-suggestions">
+                </datalist>
+            <button onclick="markAttendance()" class="btn-check">Mark Present</button>
+        </div>
+
+        <div id="log-container">
+            <h3>Recent Activity</h3>
+            <ul id="activity-log"></ul>
+        </div>
+
+        <div class="export-zone">
+            <button onclick="downloadXML()" class="btn-download">Download Updated XML Report</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
