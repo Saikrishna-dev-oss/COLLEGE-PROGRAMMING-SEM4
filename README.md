@@ -27,8 +27,6 @@ Repository containing lab programs and assignments for Semester 4 subjects.
 - Lab programs (`p1` – `p10`) covering web development fundamentals
 - Assignments and class exercises included
 
-
-
 ---
 
 ## 🛠️ How to Run
@@ -54,8 +52,8 @@ gcc <filename>.c -o output
 Open the `.html` files directly in a browser, or use a local server:
 
 ```bash
-cd wt_lab/lab_programs
-# Open p1.html in browser
+cd wt_lab/
+# Open each in browser
 ```
 
 ---
