@@ -41,17 +41,25 @@ public class KnapSack {
         System.out.println("\nMaximum Profit = " + knapmat[n][m]);
 
         // Backtracking to find selected items
+        // Backtracking to find selected items vector
+        int[] selected = new int[n+1]; // 1 if selected, else 0
         int res = knapmat[n][m];
         int cap = m;
-        System.out.print("Selected items: ");
         for(int i = n; i > 0 && res > 0; i--) {
             if(res != knapmat[i-1][cap]) {
-                // Item i was included
-                System.out.print("Object " + i + " (Profit=" + p[i] + ", Weight=" + w[i] + ")  \n");
+                selected[i] = 1;
                 res -= p[i];
                 cap -= w[i];
             }
         }
+
+        // Print selection vector
+        System.out.print("Selection Vector: (");
+        for(int i = 1; i <= n; i++) {
+            System.out.print(selected[i]);
+            if(i < n) System.out.print(", ");
+        }
+        System.out.println(")");
 
         sc.close();
     }
