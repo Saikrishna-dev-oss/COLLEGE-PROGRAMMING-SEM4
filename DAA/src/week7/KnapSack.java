@@ -42,7 +42,7 @@ public class KnapSack {
 
         System.out.println("\nMaximum Profit = " + knapmat[n][m]);
 
-        // Backtracking to find selected items
+
         // Backtracking to find selected items vector
         int[] selected = new int[n+1]; // 1 if selected, else 0
         int res = knapmat[n][m];
