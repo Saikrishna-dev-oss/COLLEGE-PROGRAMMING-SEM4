@@ -57,7 +57,7 @@ void main()
 {
     struct node *root;
 
-    root=(struct node*)malloc(sizeof(struct node));
+    root = (struct node*)malloc(sizeof(struct node));
 
     printf("Creating ROOT directory\n");
 

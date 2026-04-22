@@ -1,10 +1,10 @@
-// INdexed File Allocation
+// Indexed File Allocation
 #include <stdio.h>
 // #include <conio.h>
 #include <stdlib.h>
 
 void main() {
-    int f[50], index[50], i, n, st, len, j, c, k, ind, count = 0;
+    int f[50], index[50], i, n, j, c, k, ind, count = 0;
     // clrscr();
 
     for (i = 0; i < 50; i++)

@@ -135,6 +135,7 @@ int main()
             display();
             break;
         case 6:
+            printf("Exiting..");
             exit(0);
         }
     }

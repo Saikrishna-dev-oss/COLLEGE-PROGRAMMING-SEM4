@@ -23,10 +23,8 @@ x:
     printf("Enter index starting block and length: ");
     scanf("%d%d", &st, &len);
 
-    k = len;
-
     if (f[st] == 0) {
-        for (j = st; j < (st + k); j++) {
+        for (j = st; j < (st + len); j++) {
             if (f[j] == 0) {
                 f[j] = 1;
                 printf("%d > %d\n", j, f[j]);
