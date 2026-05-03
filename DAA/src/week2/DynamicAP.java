@@ -46,7 +46,8 @@ public class DynamicAP {
         boolean[] isAP = new boolean[n + 1];
 
         for (int i = 1; i <= n; i++) {
-            if (dfn[i] == 0) findAP(i, -1, adj, dfn, low, isAP);
+            if (dfn[i] == 0) 
+                findAP(i, -1, adj, dfn, low, isAP);
         }
 
         System.out.print("Articulation Points: ");
