@@ -14,7 +14,7 @@ x:
     printf("Enter the index block: ");
     scanf("%d", &ind);
 
-    if (f[ind] != 1) {
+    if (f[ind] == 0) {
         printf("Enter no of blocks needed for the index %d on the disk: \n", ind);
         scanf("%d", &n);
     } else {
@@ -24,6 +24,7 @@ x:
 
 y:
     count = 0;
+    printf("Enter the Blocks Numbers for the index %d: \n", ind);
     for (i = 0; i < n; i++) {
         scanf("%d", &index[i]);
         if (f[index[i]] == 0)

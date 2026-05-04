@@ -1,8 +1,8 @@
 // WEEK6 :: BANKER'S ALGORITHM FOR DEADLOCK AVOIDANCE
 #include <stdio.h>
 
-int main()
-{
+int main() {
+
     // Number of processes and resources
     int n = 5; // processes
     int m = 3; // resources
@@ -40,15 +40,13 @@ int main()
     int avail[3] = {3, 3, 2};
 
     int f[n], ans[n], ind = 0;
-    for (int k = 0; k < n; k++)
-    {
+    for (int k = 0; k < n; k++) {
         f[k] = 0;
     }
 
     // Need Matrix = Max - Allocation
     int need[n][m];
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++)
         {
             need[i][j] = max[i][j] - alloc[i][j];
@@ -56,10 +54,9 @@ int main()
     }
 
     // Banker's Algorithm
-    for (int k = 0; k < n; k++)
-    {
-        for (int i = 0; i < n; i++)
-        {
+    for (int k = 0; k < n; k++) {
+        for (int i = 0; i < n; i++) {
+
             if (f[i] == 0) {
                 int flag = 0;
                 for (int j = 0; j < m; j++)
@@ -85,8 +82,8 @@ int main()
 
     // Print Safe Sequence
     printf("Following is the SAFE Sequence:\n");
-    for (int i = 0; i < n - 1; i++)
-    {
+    for (int i = 0; i < n - 1; i++) {
+
         printf(" P%d ->", ans[i]);
     }
     printf(" P%d\n", ans[n - 1]);

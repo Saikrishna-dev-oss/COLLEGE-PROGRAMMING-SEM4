@@ -2,16 +2,16 @@
 #include<stdlib.h>
 #include<string.h>
 
-struct node
-{
+struct node {
+
     char name[20];
     int type;           //1 = Directory , 2 = File
     int children;
     struct node *child[5];
 };
 
-void create(struct node *root, char parent[])
-{
+void create(struct node *root, char parent[]) {
+
     int i;
 
     printf("\nEnter name of node under %s: ", parent);
@@ -37,8 +37,8 @@ void create(struct node *root, char parent[])
     }
 }
 
-void display(struct node *root,int level)
-{
+void display(struct node *root,int level) {
+    
     int i;
 
     for(i=0;i<level;i++)
@@ -53,8 +53,8 @@ void display(struct node *root,int level)
         display(root->child[i],level+1);
 }
 
-void main()
-{
+void main() {
+
     struct node *root;
 
     root = (struct node*)malloc(sizeof(struct node));
