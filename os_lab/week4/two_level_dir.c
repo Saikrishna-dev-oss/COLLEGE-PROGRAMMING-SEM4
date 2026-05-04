@@ -2,8 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-struct Directory
-{
+struct Directory {
     char dname[10];
     char fname[10][10];
     int fcnt;
@@ -11,8 +10,8 @@ struct Directory
 
 int dcnt = 0;
 
-void createDir()
-{
+void createDir() {
+
     printf("Enter directory name: ");
     scanf("%s", dir[dcnt].dname);
     dir[dcnt].fcnt = 0;
@@ -20,8 +19,8 @@ void createDir()
     printf("Directory created\n");
 }
 
-void createFile()
-{
+void createFile() {
+
     char d[10];
     printf("Enter directory name: ");
     scanf("%s", d);
@@ -38,8 +37,8 @@ void createFile()
     printf("Directory not found\n");
 }
 
-void deleteFile()
-{
+void deleteFile() {
+
     char d[10], f[10];
     printf("Enter directory name: ");
     scanf("%s", d);
@@ -65,8 +64,8 @@ void deleteFile()
     printf("Directory not found\n");
 }
 
-void searchFile()
-{
+void searchFile() {
+    
     char d[10], f[10];
     printf("Enter directory name: ");
     scanf("%s", d);

@@ -53,8 +53,8 @@ public class PrimsAlgorithm {
             // Update key values
             for (int v = 0; v < n; v++) {
                 if (graph[u][v] != 0 && !mstSet[v] && graph[u][v] < key[v]) {
-                    parent[v] = u;
                     key[v] = graph[u][v];
+                    parent[v] = u;
                 }
             }
         }
