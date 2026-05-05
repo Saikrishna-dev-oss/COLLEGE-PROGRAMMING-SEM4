@@ -46,16 +46,6 @@ int main()
             frame[j] = a[i];
             j = (j + 1) % no;
             count++;
-
-            // Print current frame status
-            // printf("%d\t\t", a[i]);
-            // for (k = 0; k < no; k++) {
-            //     if (frame[k] != -1)
-            //         printf("%d\t", frame[k]);
-            //     else
-            //         printf("-\t");
-            // }
-            // printf("\n");
         }
         // Page hit, just print reference
         printf("%d\t\t", a[i]);

@@ -10,7 +10,7 @@ int main() {
     printf("Enter the reference string: ");
     for (i = 0; i < n; i++) {
         scanf("%d", &rs[i]);
-        // flag[i] = 0;
+        flag[i] = 0;
     }
 
     printf("Enter the number of frames: ");
