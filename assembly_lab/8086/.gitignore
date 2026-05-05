@@ -1,5 +1,7 @@
 # Ignore compiled and output files
 *.lst
+*.map
+*.MAP
 *.LST
 *.com
 *.COM
