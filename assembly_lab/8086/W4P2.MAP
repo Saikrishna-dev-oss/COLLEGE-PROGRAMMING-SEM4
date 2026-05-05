@@ -1,0 +1,5 @@
+LINK : warning L4021: no stack segment
+
+ Start  Stop   Length Name                   Class
+ 00000H 0001DH 0001EH DATA                   
+ 00020H 00067H 00048H CODE                   

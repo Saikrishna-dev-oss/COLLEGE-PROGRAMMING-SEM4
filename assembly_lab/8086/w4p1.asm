@@ -1,0 +1,21 @@
+ASSUME CS:CODE, DS:DATA
+DATA SEGMENT
+        NUM DW 0005H
+        FACT DW ?
+DATA ENDS
+CODE SEGMENT
+        MOV AX, DATA
+        MOV DS, AX
+
+        MOV CX, NUM
+        MOV AX, 0001H
+
+  NEXT: MUL CX
+        DEC CX
+        CMP CX, 0001H
+        JNZ NEXT
+
+        MOV FACT, AX
+        INT 21H
+CODE ENDS
+END

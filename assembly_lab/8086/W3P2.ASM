@@ -1,0 +1,27 @@
+ASSUME CS:CODE, DS:DATA
+DATA SEGMENT
+        NUM DW 0037H
+        STR1 DB "THE GIVEN NUMBER IS ODD$"
+        STR2 DB "THE GIVEN NUMBER IS EVEN$"
+DATA ENDS
+
+CODE SEGMENT
+        MOV AX,DATA
+        MOV DS,AX
+        MOV AX,NUM
+        MOV BL,02H
+
+        DIV BL;PERFORMS AX/BL AND STORED IN AH
+        CMP AH,00H
+        JNE GO
+        LEA DX,STR2
+        MOV AH,09H
+        INT 21H
+        JMP NEXT
+    GO: LEA DX,STR1
+        MOV AH,09H
+        INT 21H
+
+    NEXT:HLT
+CODE ENDS
+END

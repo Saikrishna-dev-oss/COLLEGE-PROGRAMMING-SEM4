@@ -1,0 +1,17 @@
+# Ignore compiled and output files
+*.lst
+*.LST
+*.com
+*.COM
+*.obj
+*.OBJ
+*.exe
+*.EXE
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Keep ASM source files
+!*.asm
+!*.ASM
