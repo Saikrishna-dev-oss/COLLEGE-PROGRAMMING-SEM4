@@ -1,7 +1,0 @@
-<!DOCTYPE student [
-<!ELEMENT student (rollno, name, branch, marks)>
-<!ELEMENT rollno (#PCDATA)>
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT branch (#PCDATA)>
-<!ELEMENT marks (#PCDATA)>
-]>
